@@ -33,3 +33,5 @@ Especificação de usuário nº 13: a barra de navegação deve estar sempre na 
 Especificação de usuário nº 14: a landing page deve ter pelo menos uma media query.
 
 Especificação de usuário nº 15: a landing page deve utilizar pelo menos uma vez o CSS Flexbox.
+
+Apenas um teste.
