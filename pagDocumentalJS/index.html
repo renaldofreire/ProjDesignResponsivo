@@ -85,6 +85,50 @@
         <p>Sit quia dolor et quas numquam aut iste expedita ad facere velit eum voluptatem voluptate eum impedit blanditiis.</p>
         <p>Et quos modi et minus autem et alias quam est praesentium neque ut enim possimus sit voluptatem culpa sit galisum dolores.</p>
         <p>Qui laborum possimus non nihil molestiae qui molestias eligendi.</p>
+        <section class="main-section" id="Variable_scope">
+          <article>
+            <p>Hic quas sequi sit molestias animi et eius ipsa aut quia perspiciatis? Est eaque adipisci eos aperiam recusandae qui maiores inventore et omnis omnis qui velit laboriosam Quis optio!</p>
+            <p>Nam quisquam praesentium aut quia optio sed consectetur repellendus quo rerum animi ad corrupti blanditiis. Quo dolorem enim sed porro galisum est doloremque eligendi aut eveniet doloremque eum odio libero!</p>
+            <code>if (true) { var x = 5; } console.log(x); // 5</code>
+            <p>Et dignissimos ipsum ab numquam repellat qui fugit reprehenderit qui quasi dolorem.</p>
+            <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+        defined</code>
+          </article>
+        </section>
+        <section class="main-section" id="Global_variables">
+          <header>Variáveis Globais</header>
+          <article>
+            <p>Hic minus odio ut adipisci adipisci ut tempore consequatur eum officia maxime eum suscipit voluptas a ullam expedita a nemo amet. Sed internos omnis sit itaque dolorem non obcaecati laudantium ut doloribus nihil.</p>
+            <p>Aut asperiores distinctio sed cupiditate non rerum dignissimos sit corrupti cupiditate aut assumenda alias.</p>
+          </article>
+        </section>
+        <section class="main-section" id="Constants">
+          <header>Constantes</header>
+          <article>
+            <p>You can create a read-only, named constant with the const keyword. The
+        syntax of a constant identifier is the same as for a variable
+        identifier: it must start with a letter, underscore or dollar sign and
+        can contain alphabetic, numeric, or underscore characters.</p>
+            <code>const PI = 3.14;</code>
+            <p>A constant cannot change value through assignment or be re-declared
+        while the script is running. It has to be initialized to a value.</p>
+            <p>The scope rules for constants are the same as those for let block scope
+        variables. If the const keyword is omitted, the identifier is assumed to
+        represent a variable.</p>
+            <p>You cannot declare a constant with the same name as a function or
+        variable in the same scope. For example:</p>
+            <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
+        CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
+        }</code>
+             However, object attributes are not protected, so the following statement
+      is executed without problems.
+      <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code>
+          </article>
+        </section>
+        <section class="main-section" id="Data_types">
+          <header>Tipos de Dados</header>
+          <!--linha 260 do modelo-->
+        </section>
     </main>
   </body>
   </html>
